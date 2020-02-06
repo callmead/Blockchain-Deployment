@@ -1,0 +1,71 @@
+% The format is not taking the image on the specific place. Look at the next 2 lines later
+\documentclass[conference]{IEEEtran}
+%\documentclass[journal,12pt, singlecolumn]{IEEEtran}
+
+\pagestyle{plain}
+
+\usepackage{lineno}
+\usepackage[draft]{hyperref}
+\usepackage{cite}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{enumerate}
+\usepackage{filecontents}
+\usepackage{epsfig}
+
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{algcompatible}
+\usepackage[linesnumbered,ruled]{algorithm2e}
+\IEEEoverridecommandlockouts
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\newcommand\norm[1]{\left\lVert#1\right\rVert}
+\renewcommand\thetheorem{\arabic{section}.\arabic{theorem}}
+\usepackage[usenames,dvipsnames]{color}
+\newcommand{\dt}[1]{\textcolor{red}{{#1}}}
+\newcommand{\sh}[1]{\textcolor{blue}{{#1}}}
+
+\newcommand{\spl}[1]{\mathcal{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{Non-Intrusive Deployment of Blockchain in Establishing Cyber-Infrastructure for Smart City\thanks{978-1-7281-2294-6/19/\$31.00 \text{\textcopyright}2019 IEEE}}
+% 
+
+\author{\IEEEauthorblockN{Adeel A. Malik$^1$, Deepak K. Tosh$^1$, Uttam Ghosh$^2$}
+	\IEEEauthorblockA{
+		$^1$Department of Computer Science, University of Texas at El Paso, TX, USA \\
+		$^2$Department of Computer Science, Vanderbilt University, USA \\
+	    amalik@miners.utep.edu, dktosh@utep.edu, uttam.ghosh@vanderbilt.edu
+	}
+}
+
+\maketitle
+
+\begin{abstract} 
+Internet-of-Things has emerged to develop smart communities so that real time sensing and decision can improve operational efficiency and quality of lives. However, establishing such infrastructure can be exceptionally intricate due to the vast variety of devices and the implemented technologies. Also, it poses several unique challenges, such as heterogeneity of the infrastructure, type, and scale of deployment, security, privacy, and inter-operability. One primary concern in a smart city environment is the capabilities of typically end-IoT devices which are vulnerable to security threats and prone to confidentiality and integrity breach of data. Blockchain can potentially address these security challenges due to the distributed ledger's inherent properties. In this paper, we propose a decentralized architecture using the Blockchain to provide a secure and resilient smart city infrastructure that can run the ledger service over a distributed network. We consider a permissioned Blockchain, Hyperledger Sawtooth, and to automate and to overcome the infrastructural challenges concerning the smart city deployment, and we provide a systematic methodology that automates the deployment process and saves a significant amount of time. We simulate and deploy a Blockchain-integrated smart city environment using the proposed seamless deployment strategy using our automation module. With the proposed deployment scheme, we improve the Blockchain-based infrastructure development time by 82\% compared to the traditional deployment approach.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Blockchain, Smart City, Hyperledger Sawtooth, Decentralized Deployment. 
+\end{IEEEkeywords}
+
+\input{Introduction}
+\input{Background}
+\input{Architecture}
+\input{Evaluation}
+\input{Conclusion}
+
+%\section{Acknowledgment}
+
+%\appendices %\vspace*{-.1in}
+\bibliographystyle{ieeetr}
+\bibliography{References}
+\end{document}
